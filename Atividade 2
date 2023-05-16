@@ -1,0 +1,25 @@
+package main
+
+// Escreva uma função que receba dois mapas e retorne um novo
+//mapa contendo todos os elementos dos mapas de entrada.
+//Em caso de chaves duplicadas, o valor do segundo mapa deve prevalecer.
+
+func Mapas(p map[string]int ,s map[string]int) map[string]int{
+
+	x := make(map[string]int)
+
+	for k, v := range p {
+		x[k]=v
+	}
+	for q, u := range s {
+		x[q]=u
+	}
+
+
+	return x
+}
+
+
+func main() {
+
+}
