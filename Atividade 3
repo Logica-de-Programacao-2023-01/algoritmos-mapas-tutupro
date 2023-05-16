@@ -1,0 +1,22 @@
+package main
+
+import "go/ast"
+
+//Escreva uma função que receba um mapa com
+//valores inteiros e retorne a soma de todos os valores.
+
+func Mapas(p map[string]int) int {
+
+	var soma int
+
+	for _, valor := range p {
+		soma = soma + valor
+	}
+
+	return soma
+}
+
+func main() {
+	// banana = 23
+	// uva = 64
+}
