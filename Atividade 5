@@ -1,1 +1,27 @@
+package main
+
+// Escreva uma função que receba uma string e retorne um mapa
+//onde as chaves são os caracteres presentes na string e os valores
+//são a frequência de cada caractere.
+
+import "strings"
+
+func Character(texto string) map[string]int {
+
+	palavras := strings.Fields(texto)
+	tampalavra := make(map[string]int)
+
+	for _, x := range palavras {
+
+		tampalavra[x]++
+	}
+
+	return tampalavra
+
+}
+
+func main() {
+
+}
+
 
